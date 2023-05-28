@@ -7,8 +7,8 @@ Given an array const a = [1, 3, 5, 2, 4] generate an array result1 from a, which
 const result1 = a.filter((ele,index)=>{
     if(index%2===0) return true;
     return false;
-})
-console.log(result1)
+});
+console.log(result1);
 
 
 
@@ -18,8 +18,8 @@ Given an array const a = [1, 3, 5, 2, 4]generate an array result2 from a, which 
 
 **Answer 2 ->**
 ------------
-const result2 = a.map(ele=>ele**2)
-console.log(result2)
+const result2 = a.map(ele=>ele**2);
+console.log(result2);
 
 
 
@@ -33,5 +33,5 @@ Given an array const a = [1, 3, 5, 2, 4]generate an array result3 from a, which 
 const result3 = a.filter((ele,index)=>{
     if(index%2===0) return true;
     return false;
-}).map(ele=>ele**2)
-console.log(result3)
+}).map(ele=>ele**2);
+console.log(result3);
