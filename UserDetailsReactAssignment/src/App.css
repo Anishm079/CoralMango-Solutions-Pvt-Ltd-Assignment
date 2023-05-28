@@ -1,0 +1,330 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+/* NavBar */
+
+nav{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to right,rgb(41, 41, 255) 10%,#ff9100 60%);
+    display: flex;
+}
+
+nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 30px;
+}
+
+nav ul li:hover{
+    list-style: none;
+    padding: 0px 30px;
+}
+
+nav ul li.company-logo{
+    width:60px;
+    height:100%;
+    padding: 0px 30px;
+}
+nav ul li *{
+    text-decoration: none;
+    color: #f1ecec;
+    font-size: large;
+    font-weight: 600;
+}
+
+nav ul li *:hover , nav ul li:hover{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav .logout-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logout-button *{
+    text-decoration: none;
+    color: #f1ecec;
+    font-size: medium;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+/* Login page */
+
+/*cartoose css */
+
+.login-page{
+    background-color: #ff9100;
+    width: 100vw;
+    height: 93.3dvh;
+    display: flex;
+    flex-direction: row;
+}
+
+.login-page .login-paints img{
+    position: absolute;
+    height: 93.3%;
+}
+
+.login-page .login-paints .cartoons{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    padding-top: 12em;/*conf*/
+    padding-left: 10em;/*conf*/
+}
+
+.login-page .login-paints .cartoons div{
+    width: 10em;/*conf*/
+    height: 400px;/*conf*/
+    padding:0px 5px;/*conf*/
+}
+
+.login-page .login-paints .cartoons img{
+    height: 400px;
+}
+
+/* login fields */
+.login-container{
+    margin-left: 13em;
+    width: 30%;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+}
+
+.login-container .login-details{
+    background-color: rgb(255, 255, 255, 0.7);
+    height:45%;
+    width: 150%;/*conf */
+    box-shadow: 0px 3px 5px black;
+}
+
+.login-container .login-details form{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    justify-items: center;
+    align-items: center;
+}
+/* .login-container .login-details form *{
+    color: white;
+} */
+
+.login-container .login-details form h1{
+    padding: 0.5em;
+    padding-bottom: none;
+}
+.login-container .login-details form hr{
+    padding: 0.5px;
+    width:50%;
+    border: none;
+    background-color: #000;
+}
+.login-container .login-details form .all-fields {
+    /* background-color:aqua; */
+    height: 10em;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+.login-container .login-details form .all-fields div{
+    width: 100%;
+    /* background-color:aqua; */
+} 
+
+/* Home Page */
+
+.home-page{
+    background:linear-gradient(45deg,#ffbe3c,#ff9100) ;
+    width: 100dvw;
+    height: 93.3dvh;
+    z-index: -2;
+}
+
+.home-page .home-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* backgrnd image */
+    width: 100dvw;
+    height:93%;
+    background: url('./assets/flowers.png') no-repeat;
+    background-position: right bottom;
+    background-size:contain;
+}
+.home-page .home-details-container .alert-msg{
+    width: 40%;
+    text-align: center;
+    height: 5%;
+    margin-top: 5px;
+}
+.home-page .home-details-container .alert-msg h4{
+    height: 100%;
+    padding-top: 5px;
+    background:linear-gradient(45deg,#7f77f4,#4b44ff) ;
+    border-radius: 5px;
+    color:#000;
+}
+
+.home-page .home-details-container .view-selection-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    height: 45px;
+    margin-top: 5em;
+}
+
+.home-page .home-details-container .view-selection-container .view-select-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    padding:15px ;
+    border-radius: 5px;
+    background-color: #ffffff;
+} 
+
+.home-page .home-details-container .view-selection-container .view-select-button input,label{
+    cursor: pointer;
+}
+
+.home-page .home-details-container .searchbar-container{
+    background-color: #fff;
+    width: 25%;
+    height:40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.home-page .home-details-container .searchbar-container input{
+    width: 90%;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+
+.home-page .home-details-container .details-filter-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #00b3ff;
+    width: 18%;
+    height:30px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.home-page .home-details-container .details-filter-container select{
+    border:none;
+    border-radius: 5px;
+}
+
+.home-page .home-details-container .users-details-container{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Users list */
+.users-table-container{
+    margin: 10px 0px; 
+    width:100%;
+    background-color: #00000047;
+    border-radius: 5px;
+}
+
+.users-table-container table{
+    border-spacing: 20px;
+    /* border-spacing: 30px; */
+}
+
+tr, th, td {
+    border: 2px solid #00b3ff;
+    background-color: #00b3ff;
+    color:#fff;
+    padding: 2px 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+table thead th{
+    background-color: #4c00ff;
+}
+
+/* user cards view */
+
+.user-tab-view{
+    display: grid;
+    place-items: center;
+    width:100%;
+    height:100%;
+    margin-top: 30px;
+}
+
+.user-tab-view .users-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 100px;
+}
+
+.user-tab-view .users-container .user-card{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    width: 150px;
+    height:150px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #4b44ff,#2acdff);
+}
+
+.user-tab-view .users-container .user-card .avatar{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+.user-tab-view .users-container .user-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

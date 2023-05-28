@@ -1,0 +1,159 @@
+/* Media Queries */
+
+@media only screen and (min-width: 800px) and (max-width: 1350px) {
+  nav {
+    width: 100dvw;
+    height: 10dvh;
+    background: linear-gradient(to right, rgb(41, 41, 255) 10%, #ff9100 60%);
+  }
+
+  /*cartoose css */
+
+  .login-page {
+    background-color: #ff9100;
+    width: 100vw;
+    height: 94dvh;
+    overflow: hidden;
+  }
+
+  .login-container {
+    margin-left: -20em;
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+  }
+
+  .login-container .login-details {
+    background-color: rgb(255, 255, 255, 0.7);
+    height: 50%;
+    width: 150%;
+    box-shadow: 0px 3px 5px black;
+    display: grid;
+    place-items: center;
+  }
+
+  /* home  */
+
+  .home-page .home-details-container .view-selection-container {
+    width: 40%;
+  }
+  .home-page .home-details-container .searchbar-container {
+    width: 35%;
+  }
+  .home-page .home-details-container .details-filter-container {
+    width: 30%;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+  nav {
+    width: 100dvw;
+    height: 7dvh;
+    background: linear-gradient(to right, rgb(41, 41, 255) 10%, #ff9100 60%);
+  }
+  nav ul li.logout-button {
+    align-self:self-end;
+  }
+
+  /*cartoose css */
+
+  .login-page .login-paints {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: baseline;
+    padding-left: 0em;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  .login-page .login-paints img.bkgd {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0em;
+    position: absolute;
+  }
+
+  .login-page .login-paints .cartoons {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    /* justify-content: flex-start;
+    align-items: center; */
+    padding-left: 0em;
+  }
+
+  .login-page .login-paints .cartoons div {
+    width: 5em;
+    height: 100px;
+    margin: 0px 14px;
+  }
+
+  .login-page .login-paints .cartoons img {
+    height: 250px;
+  }
+
+  .login-page {
+    background-color: #ff9100;
+    width: 100vw;
+    height: 94dvh;
+    overflow: hidden;
+  }
+
+  .login-container {
+    margin-left: 0em;
+    width: 10000dvw;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+  }
+
+  .login-container .login-details {
+    background-color: rgb(255, 255, 255, 0.7);
+    height: 50%;
+    width: 90%;
+    box-shadow: 0px 3px 5px black;
+    display: grid;
+    place-items: center;
+  }
+  .login-container .login-details form .all-fields {
+    width: 70%;
+  }
+  .login-container .login-details form {
+    width: 90%;
+  }
+  /* home  */
+  .home-page .home-details-container .alert-msg{
+    width: 80%;
+}
+  .home-page .home-details-container .view-selection-container {
+    width: 80%;
+  }
+  .home-page .home-details-container .searchbar-container {
+    width: 80%;
+    padding: 5px;
+  }
+  .home-page .home-details-container .details-filter-container {
+    width: 70%;
+  }
+
+  .user-tab-view .users-container {
+    grid-template-columns: 1fr;
+    height: 19em;
+    row-gap: 10px;
+    overflow: auto;
+  }
+
+  /* Users list */
+  tr,
+  th,
+  td {
+    padding: 1px 5px;
+    font-size: 1rem;
+  }
+}
